@@ -1,0 +1,572 @@
+
+[     UTC     ] Logs for share.streamlit.io/canion3d/printrun/printrun/gcoder.py
+────────────────────────────────────────────────────────────────────────────────────────
+[08:54:24] 🖥 Provisioning machine...
+[08:54:29] 🎛 Preparing system...
+[08:54:27] 🚀 Starting up repository: 'printrun', branch: 'master', main module: 'printrun/gcoder.py'
+[08:54:27] 🐙 Cloning repository...
+[08:54:32] 🐙 Cloning into '/app/printrun'...
+
+[08:54:32] 🐙 Cloned repository!
+[08:54:32] 🐙 Pulling code changes from Github...
+[08:54:33] 📦 Processing dependencies...
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Ignoring pyobjc-framework-Cocoa: markers 'sys_platform == "darwin"' don't match your environment
+Ignoring pyreadline: markers 'sys_platform == "win32"' don't match your environment
+Collecting pyserial>=3.0
+  Downloading pyserial-3.5-py2.py3-none-any.whl (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 KB 6.7 MB/s eta 0:00:00[2022-06-20 08:54:33.951024] 
+Collecting wxPython==4.1.0
+  Downloading wxPython-4.1.0.tar.gz (65.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.8/65.8 MB 227.8 MB/s eta 0:00:00[2022-06-20 08:54:34.341953] 
+[08:54:35] ⛓ Spinning up manager process...
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting numpy>=1.8.2
+  Downloading numpy-1.22.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 227.2 MB/s eta 0:00:00[2022-06-20 08:54:43.807025] 
+Collecting pyglet>=1.1
+  Downloading pyglet-1.5.26-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 235.0 MB/s eta 0:00:00[2022-06-20 08:54:43.954705] 
+Collecting cffi
+  Downloading cffi-1.15.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (444 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 444.3/444.3 KB 176.0 MB/s eta 0:00:00[2022-06-20 08:54:44.236004] 
+Collecting cairocffi
+  Downloading cairocffi-1.3.0.tar.gz (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.8/88.8 KB 213.3 MB/s eta 0:00:00[2022-06-20 08:54:44.282746] 
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting cairosvg>=1.0.9
+  Downloading CairoSVG-2.5.2-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.8/45.8 KB 143.8 MB/s eta 0:00:00[2022-06-20 08:54:50.089907] 
+Collecting psutil>=2.1
+  Downloading psutil-5.9.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (281 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 281.1/281.1 KB 223.7 MB/s eta 0:00:00[2022-06-20 08:54:50.323080] 
+Collecting lxml>=2.9.1
+  Downloading lxml-4.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (7.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 245.7 MB/s eta 0:00:00[2022-06-20 08:54:50.706069] 
+Collecting appdirs>=1.4.0
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting dbus-python>=1.2.0
+  Downloading dbus-python-1.2.18.tar.gz (578 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 578.2/578.2 KB 233.6 MB/s eta 0:00:00[2022-06-20 08:54:50.797537] 
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pillow
+  Downloading Pillow-9.1.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 244.4 MB/s eta 0:00:00[2022-06-20 08:54:53.389647] 
+Collecting six
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting pycparser
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 KB 203.8 MB/s eta 0:00:00[2022-06-20 08:54:53.481201] 
+Collecting defusedxml
+  Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Collecting cssselect2
+  Downloading cssselect2-0.6.0-py3-none-any.whl (15 kB)
+Collecting tinycss2
+  Downloading tinycss2-1.1.1-py3-none-any.whl (21 kB)
+Collecting webencodings
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: wxPython, cairocffi, dbus-python
+  Building wheel for wxPython (setup.py): started
+  Building wheel for wxPython (setup.py): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [135 lines of output]
+      /home/appuser/venv/lib/python3.9/site-packages/setuptools/dist.py:757: UserWarning: Usage of dash-separated 'license-file' will not be supported in future versions. Please use the underscore name 'license_file' instead
+        warnings.warn(
+      /home/appuser/venv/lib/python3.9/site-packages/setuptools/dist.py:303: DistDeprecationWarning: use_2to3 is ignored.
+        warnings.warn(f"{attr} is ignored.", DistDeprecationWarning)
+      running bdist_wheel
+      running build
+      WARNING: Building this way assumes that all generated files have been
+      generated already.  If that is not the case then use build.py directly
+      to generate the source and perform the build stage.  You can use
+      --skip-build with the bdist_* or install commands to avoid this
+      message and the wxWidgets and Phoenix build steps in the future.
+      
+      "/home/appuser/venv/bin/python" -u build.py build
+      Will build using: "/home/appuser/venv/bin/python"
+      3.9.13 (main, May 28 2022, 14:03:04)
+      [GCC 10.2.1 20210110]
+      Python's architecture is 64bit
+      cfg.VERSION: 4.1.0
+      
+      Running command: build
+      Running command: build_wx
+      wxWidgets build options: ['--wxpython', '--unicode', '--gtk3']
+      Configure options: ['--enable-unicode', '--with-gtk=3', '--enable-sound', '--enable-graphics_ctx', '--enable-display', '--enable-geometry', '--enable-debug_flag', '--enable-optimise', '--disable-debugreport', '--enable-uiactionsim', '--enable-autoidman', '--with-sdl']
+      /tmp/pip-install-fynyr2g2/wxpython_844d5862c7264b4ba94271abfd701264/ext/wxWidgets/configure --enable-unicode --with-gtk=3 --enable-sound --enable-graphics_ctx --enable-display --enable-geometry --enable-debug_flag --enable-optimise --disable-debugreport --enable-uiactionsim --enable-autoidman --with-sdl
+      checking build system type... x86_64-pc-linux-gnu
+      checking host system type... x86_64-pc-linux-gnu
+      checking for toolkit... gtk
+      checking for gcc... gcc
+      checking whether the C compiler works... yes
+      checking for C compiler default output file name... a.out
+      checking for suffix of executables...
+      checking whether we are cross compiling... no
+      checking for suffix of object files... o
+      checking whether we are using the GNU C compiler... yes
+      checking whether gcc accepts -g... yes
+      checking for gcc option to accept ISO C89... none needed
+      checking whether we are using the Intel C compiler... no
+      checking how to run the C preprocessor... gcc -E
+      checking for grep that handles long lines and -e... /bin/grep
+      checking for egrep... /bin/grep -E
+      checking whether gcc needs -traditional... no
+      checking for g++... g++
+      checking whether we are using the GNU C++ compiler... yes
+      checking whether g++ accepts -g... yes
+      checking whether we are using the Intel C++ compiler... no
+      checking whether we are using the Sun C++ compiler... no
+      checking for ar... ar
+      checking for ANSI C header files... yes
+      checking for sys/types.h... yes
+      checking for sys/stat.h... yes
+      checking for stdlib.h... yes
+      checking for string.h... yes
+      checking for memory.h... yes
+      checking for strings.h... yes
+      checking for inttypes.h... yes
+      checking for stdint.h... yes
+      checking for unistd.h... yes
+      checking for langinfo.h... yes
+      checking for wchar.h... yes
+      checking for sys/select.h... yes
+      checking for cxxabi.h... yes
+      checking for an ANSI C-conforming const... yes
+      checking for inline... inline
+      checking size of short... 2
+      checking size of void *... 8
+      checking size of int... 4
+      checking size of long... 8
+      checking size of size_t... 8
+      checking size of long long... 8
+      checking size of wchar_t... 4
+      checking for va_copy... yes
+      checking whether the compiler supports variadic macros... yes
+      checking for _FILE_OFFSET_BITS value needed for large files... 64
+      checking if large file support is available... yes
+      checking for _LARGEFILE_SOURCE value needed for large files... no
+      checking whether byte ordering is bigendian... no
+      checking for std::wstring in <string>... yes
+      checking for std::istream... yes
+      checking for std::ostream... yes
+      checking for type_traits... yes
+      checking for __sync_fetch_and_add and __sync_sub_and_fetch builtins... yes
+      checking for libraries directories... /usr/lib/x86_64-linux-gnu /usr/lib
+      checking for cos... no
+      checking for floor... no
+      checking if floating point functions link without -lm... no
+      checking for sin... yes
+      checking for ceil... yes
+      checking if floating point functions link with -lm... yes
+      checking for strtoull... yes
+      checking for pkg-config... no
+      configure: WARNING: Defaulting to the builtin regex library for Unicode build.
+      checking for zlib.h >= 1.1.4... no
+      checking for zlib.h... (cached) no
+      configure: WARNING: zlib library not found or too old, will use built-in instead
+      checking for png.h > 0.90... no
+      checking for png.h... (cached) no
+      configure: WARNING: system png library not found or too old, will use built-in instead
+      checking for jpeglib.h... no
+      configure: WARNING: system jpeg library not found, will use built-in instead
+      checking lzma.h usability... no
+      checking lzma.h presence... no
+      checking for lzma.h... no
+      checking for jbg_dec_init in -ljbig... no
+      checking for LIBTIFF... not found via pkg-config
+      checking for tiffio.h... no
+      configure: WARNING: system tiff library not found, will use built-in instead
+      checking for expat.h... no
+      configure: WARNING: system expat library not found, will use built-in instead
+      checking for gcc option to accept ISO C99... none needed
+      checking for GTK+ version...
+      checking for pkg-config... no
+      checking for GTK+ - version >= 3.0.0... no
+      *** A new enough version of pkg-config was not found.
+      *** See http://pkgconfig.sourceforge.net
+      configure: error:
+      The development files for GTK+ were not found. For GTK+ 2, please
+      ensure that pkg-config is in the path and that gtk+-2.0.pc is
+      installed. For GTK+ 1.2 please check that gtk-config is in the path,
+      and that the version is 1.2.3 or above. Also check that the
+      libraries returned by 'pkg-config gtk+-2.0 --libs' or 'gtk-config
+      --libs' are in the LD_LIBRARY_PATH or equivalent.
+      
+      Error running configure
+      ERROR: failed building wxWidgets
+      Traceback (most recent call last):
+        File "/tmp/pip-install-fynyr2g2/wxpython_844d5862c7264b4ba94271abfd701264/build.py", line 1471, in cmd_build_wx
+          wxbuild.main(wxDir(), build_options)
+        File "/tmp/pip-install-fynyr2g2/wxpython_844d5862c7264b4ba94271abfd701264/buildtools/build_wxwidgets.py", line 372, in main
+          exitIfError(wxBuilder.configure(dir=wxRootDir, options=configure_opts),
+        File "/tmp/pip-install-fynyr2g2/wxpython_844d5862c7264b4ba94271abfd701264/buildtools/build_wxwidgets.py", line 85, in exitIfError
+          raise builder.BuildError(msg)
+      buildtools.builder.BuildError: Error running configure
+      Finished command: build_wx (0m4.200s)
+      Finished command: build (0m4.200s)
+      Command '"/home/appuser/venv/bin/python" -u build.py build' failed with exit code 1.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for wxPython
+  Running setup.py clean for wxPython
+  Building wheel for cairocffi (setup.py): started
+  Building wheel for cairocffi (setup.py): finished with status 'done'
+  Created wheel for cairocffi: filename=cairocffi-1.3.0-py3-none-any.whl size=89668 sha256=4db528d477d3de9dbdcd37fb33ce602e8b96844c53c756ecdc370ec2192cf0c2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-7u5ylval/wheels/78/ad/a6/032d6c6f721cd8a233c3d45beed982f84afa852dd481a9fd50
+  Building wheel for dbus-python (setup.py): started
+  Building wheel for dbus-python (setup.py): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [151 lines of output]
+      running bdist_wheel
+      running build
+      creating /tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build
+      creating /tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build/temp.linux-x86_64-cpython-39
+      checking whether make supports nested variables... yes
+      checking whether to enable maintainer-specific portions of Makefiles... no
+      checking for gcc... gcc
+      checking whether the C compiler works... yes
+      checking for C compiler default output file name... a.out
+      checking for suffix of executables...
+      checking whether we are cross compiling... no
+      checking for suffix of object files... o
+      checking whether we are using the GNU C compiler... yes
+      checking whether gcc accepts -g... yes
+      checking for gcc option to accept ISO C89... none needed
+      checking whether gcc understands -c and -o together... yes
+      checking how to run the C preprocessor... gcc -E
+      checking for grep that handles long lines and -e... /bin/grep
+      checking for egrep... /bin/grep -E
+      checking for ANSI C header files... yes
+      checking for sys/types.h... yes
+      checking for sys/stat.h... yes
+      checking for stdlib.h... yes
+      checking for string.h... yes
+      checking for memory.h... yes
+      checking for strings.h... yes
+      checking for inttypes.h... yes
+      checking for stdint.h... yes
+      checking for unistd.h... yes
+      checking minix/config.h usability... no
+      checking minix/config.h presence... no
+      checking for minix/config.h... no
+      checking whether it is safe to define __EXTENSIONS__... yes
+      checking for a BSD-compatible install... /usr/bin/install -c
+      checking whether build environment is sane... yes
+      checking for a thread-safe mkdir -p... /bin/mkdir -p
+      checking for gawk... no
+      checking for mawk... mawk
+      checking whether make sets $(MAKE)... yes
+      checking whether make supports the include directive... yes (GNU style)
+      checking whether UID '1000' is supported by ustar format... yes
+      checking whether GID '1000' is supported by ustar format... yes
+      checking how to create a ustar tar archive... gnutar
+      checking dependency style of gcc... gcc3
+      checking build system type... x86_64-pc-linux-gnu
+      checking host system type... x86_64-pc-linux-gnu
+      checking for native Windows host... no
+      checking how to print strings... printf
+      checking for a sed that does not truncate output... /bin/sed
+      checking for fgrep... /bin/grep -F
+      checking for ld used by gcc... /usr/bin/ld
+      checking if the linker (/usr/bin/ld) is GNU ld... yes
+      checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+      checking the name lister (/usr/bin/nm -B) interface... BSD nm
+      checking whether ln -s works... yes
+      checking the maximum length of command line arguments... 1572864
+      checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+      checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+      checking for /usr/bin/ld option to reload object files... -r
+      checking for objdump... objdump
+      checking how to recognize dependent libraries... pass_all
+      checking for dlltool... no
+      checking how to associate runtime and link libraries... printf %s\n
+      checking for ar... ar
+      checking for archiver @FILE support... @
+      checking for strip... strip
+      checking for ranlib... ranlib
+      checking command to parse /usr/bin/nm -B output from gcc object... ok
+      checking for sysroot... no
+      checking for a working dd... /bin/dd
+      checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+      checking for mt... no
+      checking if : is a manifest tool... no
+      checking for dlfcn.h... yes
+      checking for objdir... .libs
+      checking if gcc supports -fno-rtti -fno-exceptions... no
+      checking for gcc option to produce PIC... -fPIC -DPIC
+      checking if gcc PIC flag -fPIC -DPIC works... yes
+      checking if gcc static flag -static works... yes
+      checking if gcc supports -c -o file.o... yes
+      checking if gcc supports -c -o file.o... (cached) yes
+      checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+      checking whether -lc should be explicitly linked in... no
+      checking dynamic linker characteristics... GNU/Linux ld.so
+      checking how to hardcode library paths into programs... immediate
+      checking whether stripping libraries is possible... yes
+      checking if libtool supports shared libraries... yes
+      checking whether to build shared libraries... yes
+      checking whether to build static libraries... no
+      checking for inline... inline
+      checking for gawk... (cached) mawk
+      checking for python3.9.13... /home/appuser/venv/bin/python
+      checking for a version of Python >= '2.1.0'... yes
+      checking for a version of Python >= '2.7'... yes
+      checking for the distutils Python package... yes
+      checking for Python include path... -I/usr/local/include/python3.9
+      checking for Python library path... -L/usr/local/lib -lpython3.9
+      checking for Python site-packages path... /home/appuser/venv/lib/python3.9/site-packages
+      checking python extra libraries... -lcrypt -lpthread -ldl  -lutil -lm -lm
+      checking python extra linking flags... -Xlinker -export-dynamic
+      checking consistency of all components of python development environment... yes
+      checking for python version... 3.9
+      checking for python platform... linux
+      checking for python script directory... ${prefix}/lib/python3.9/site-packages
+      checking for python extension module directory... ${exec_prefix}/lib/python3.9/site-packages
+      checking python module: sphinx... no
+      checking python module: sphinx_rtd_theme... no
+      checking for dbus-run-session... /usr/bin/dbus-run-session
+      checking for pkg-config... no
+      checking for dbus-1 >= 1.8... no
+      configure: error: in `/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build/temp.linux-x86_64-cpython-39':
+      configure: error: The pkg-config script could not be found or is too old.  Make sure it
+      is in your PATH or set the PKG_CONFIG environment variable to the full
+      path to pkg-config.
+      
+      Alternatively, you may set the environment variables DBUS_CFLAGS
+      and DBUS_LIBS to avoid the need to call pkg-config.
+      See the pkg-config man page for more details.
+      
+      To get pkg-config, see <http://pkg-config.freedesktop.org/>.
+      See `config.log' for more details
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/setup.py", line 85, in <module>
+          setup(
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/__init__.py", line 87, in setup
+          return distutils.core.setup(**attrs)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 148, in setup
+          return run_commands(dist)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 163, in run_commands
+          dist.run_commands()
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 967, in run_commands
+          self.run_command(cmd)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/dist.py", line 1214, in run_command
+          super().run_command(command)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+          cmd_obj.run()
+        File "/home/appuser/venv/lib/python3.9/site-packages/wheel/bdist_wheel.py", line 299, in run
+          self.run_command('build')
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/cmd.py", line 313, in run_command
+          self.distribution.run_command(command)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/dist.py", line 1214, in run_command
+          super().run_command(command)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+          cmd_obj.run()
+        File "/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/setup.py", line 56, in run
+          subprocess.check_call([
+        File "/usr/local/lib/python3.9/subprocess.py", line 373, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/configure', '--disable-maintainer-mode', 'PYTHON=/home/appuser/venv/bin/python', '--prefix=/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build/temp.linux-x86_64-cpython-39/prefix']' returned non-zero exit status 1.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for dbus-python
+  Running setup.py clean for dbus-python
+Successfully built cairocffi
+Failed to build wxPython dbus-python
+Installing collected packages: webencodings, pyserial, pyglet, dbus-python, appdirs, tinycss2, six, pycparser, psutil, pillow, numpy, lxml, defusedxml, wxPython, cssselect2, cffi, cairocffi, cairosvg
+  Running setup.py install for dbus-python: started
+  Running setup.py install for dbus-python: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Running setup.py install for dbus-python did not run successfully.
+  │ exit code: 1
+  ╰─> [155 lines of output]
+      running install
+      /home/appuser/venv/lib/python3.9/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+        warnings.warn(
+      running build
+      creating /tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build
+      creating /tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build/temp.linux-x86_64-cpython-39
+      checking whether make supports nested variables... yes
+      checking whether to enable maintainer-specific portions of Makefiles... no
+      checking for gcc... gcc
+      checking whether the C compiler works... yes
+      checking for C compiler default output file name... a.out
+      checking for suffix of executables...
+      checking whether we are cross compiling... no
+      checking for suffix of object files... o
+      checking whether we are using the GNU C compiler... yes
+      checking whether gcc accepts -g... yes
+      checking for gcc option to accept ISO C89... none needed
+      checking whether gcc understands -c and -o together... yes
+      checking how to run the C preprocessor... gcc -E
+      checking for grep that handles long lines and -e... /bin/grep
+      checking for egrep... /bin/grep -E
+      checking for ANSI C header files... yes
+      checking for sys/types.h... yes
+      checking for sys/stat.h... yes
+      checking for stdlib.h... yes
+      checking for string.h... yes
+      checking for memory.h... yes
+      checking for strings.h... yes
+      checking for inttypes.h... yes
+      checking for stdint.h... yes
+      checking for unistd.h... yes
+      checking minix/config.h usability... no
+      checking minix/config.h presence... no
+      checking for minix/config.h... no
+      checking whether it is safe to define __EXTENSIONS__... yes
+      checking for a BSD-compatible install... /usr/bin/install -c
+      checking whether build environment is sane... yes
+      checking for a thread-safe mkdir -p... /bin/mkdir -p
+      checking for gawk... no
+      checking for mawk... mawk
+      checking whether make sets $(MAKE)... yes
+      checking whether make supports the include directive... yes (GNU style)
+      checking whether UID '1000' is supported by ustar format... yes
+      checking whether GID '1000' is supported by ustar format... yes
+      checking how to create a ustar tar archive... gnutar
+      checking dependency style of gcc... gcc3
+      checking build system type... x86_64-pc-linux-gnu
+      checking host system type... x86_64-pc-linux-gnu
+      checking for native Windows host... no
+      checking how to print strings... printf
+      checking for a sed that does not truncate output... /bin/sed
+      checking for fgrep... /bin/grep -F
+      checking for ld used by gcc... /usr/bin/ld
+      checking if the linker (/usr/bin/ld) is GNU ld... yes
+      checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+      checking the name lister (/usr/bin/nm -B) interface... BSD nm
+      checking whether ln -s works... yes
+      checking the maximum length of command line arguments... 1572864
+      checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+      checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+      checking for /usr/bin/ld option to reload object files... -r
+      checking for objdump... objdump
+      checking how to recognize dependent libraries... pass_all
+      checking for dlltool... no
+      checking how to associate runtime and link libraries... printf %s\n
+      checking for ar... ar
+      checking for archiver @FILE support... @
+      checking for strip... strip
+      checking for ranlib... ranlib
+      checking command to parse /usr/bin/nm -B output from gcc object... ok
+      checking for sysroot... no
+      checking for a working dd... /bin/dd
+      checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+      checking for mt... no
+      checking if : is a manifest tool... no
+      checking for dlfcn.h... yes
+      checking for objdir... .libs
+      checking if gcc supports -fno-rtti -fno-exceptions... no
+      checking for gcc option to produce PIC... -fPIC -DPIC
+      checking if gcc PIC flag -fPIC -DPIC works... yes
+      checking if gcc static flag -static works... yes
+      checking if gcc supports -c -o file.o... yes
+      checking if gcc supports -c -o file.o... (cached) yes
+      checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+      checking whether -lc should be explicitly linked in... no
+      checking dynamic linker characteristics... GNU/Linux ld.so
+      checking how to hardcode library paths into programs... immediate
+      checking whether stripping libraries is possible... yes
+      checking if libtool supports shared libraries... yes
+      checking whether to build shared libraries... yes
+      checking whether to build static libraries... no
+      checking for inline... inline
+      checking for gawk... (cached) mawk
+      checking for python3.9.13... /home/appuser/venv/bin/python
+      checking for a version of Python >= '2.1.0'... yes
+      checking for a version of Python >= '2.7'... yes
+      checking for the distutils Python package... yes
+      checking for Python include path... -I/usr/local/include/python3.9
+      checking for Python library path... -L/usr/local/lib -lpython3.9
+      checking for Python site-packages path... /home/appuser/venv/lib/python3.9/site-packages
+      checking python extra libraries... -lcrypt -lpthread -ldl  -lutil -lm -lm
+      checking python extra linking flags... -Xlinker -export-dynamic
+      checking consistency of all components of python development environment... yes
+      checking for python version... 3.9
+      checking for python platform... linux
+      checking for python script directory... ${prefix}/lib/python3.9/site-packages
+      checking for python extension module directory... ${exec_prefix}/lib/python3.9/site-packages
+      checking python module: sphinx... no
+      checking python module: sphinx_rtd_theme... no
+      checking for dbus-run-session... /usr/bin/dbus-run-session
+      checking for pkg-config... no
+      checking for dbus-1 >= 1.8... no
+      configure: error: in `/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build/temp.linux-x86_64-cpython-39':
+      configure: error: The pkg-config script could not be found or is too old.  Make sure it
+      is in your PATH or set the PKG_CONFIG environment variable to the full
+      path to pkg-config.
+      
+      Alternatively, you may set the environment variables DBUS_CFLAGS
+      and DBUS_LIBS to avoid the need to call pkg-config.
+      See the pkg-config man page for more details.
+      
+      To get pkg-config, see <http://pkg-config.freedesktop.org/>.
+      See `config.log' for more details
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/setup.py", line 85, in <module>
+          setup(
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/__init__.py", line 87, in setup
+          return distutils.core.setup(**attrs)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 148, in setup
+          return run_commands(dist)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 163, in run_commands
+          dist.run_commands()
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 967, in run_commands
+          self.run_command(cmd)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/dist.py", line 1214, in run_command
+          super().run_command(command)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+          cmd_obj.run()
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/command/install.py", line 68, in run
+          return orig.install.run(self)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/command/install.py", line 670, in run
+          self.run_command('build')
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/cmd.py", line 313, in run_command
+          self.distribution.run_command(command)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/dist.py", line 1214, in run_command
+          super().run_command(command)
+        File "/home/appuser/venv/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+          cmd_obj.run()
+        File "/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/setup.py", line 56, in run
+          subprocess.check_call([
+        File "/usr/local/lib/python3.9/subprocess.py", line 373, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/configure', '--disable-maintainer-mode', 'PYTHON=/home/appuser/venv/bin/python', '--prefix=/tmp/pip-install-fynyr2g2/dbus-python_926ca9fe306e40acbbb4b7515bab304a/build/temp.linux-x86_64-cpython-39/prefix']' returned non-zero exit status 1.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: legacy-install-failure
+
+× Encountered error while trying to install package.
+╰─> dbus-python
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for output from the failure.
+WARNING: You are using pip version 22.0.3; however, version 22.1.2 is available.
+You should consider upgrading via the '/home/appuser/venv/bin/python -m pip install --upgrade pip' command.
+Checking if Streamlit is installed
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[08:55:18] ❗️ installer returned a non-zero exit code
+[08:55:18] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[08:56:57] ❗️ Streamlit server consistently failed status checks
+[08:56:57] ❗️ Please fix the errors, push an update to the git repo, or reboot the app.
