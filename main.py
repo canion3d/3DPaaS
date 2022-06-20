@@ -1,5 +1,4 @@
 import streamlit as st
-import 3d-converter as 3dc
 from pip._internal import main
 
 st.write('\n'
