@@ -1,15 +1,6 @@
 import streamlit as st
 import pandas as pd
 import base64
-import seaborn as sns
-import numpy as np
-import yfinance as yf
-import django as dj
-import pandas_datareader as web
-import datetime as dt
-import mplfinance as mpf
-from fastapi import FastAPI
-from django.db import models
 
 from pip._internal import main
 
