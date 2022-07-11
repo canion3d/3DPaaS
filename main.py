@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import base64
-import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import yfinance as yf
@@ -11,7 +10,6 @@ import datetime as dt
 import mplfinance as mpf
 from fastapi import FastAPI
 from django.db import models
-from tdameritrade_client.client import TDClient
 
 from pip._internal import main
 
