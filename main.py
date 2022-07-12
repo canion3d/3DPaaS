@@ -92,6 +92,8 @@ st.map(df)
 
 st.sidebar.header('Start your 3D Printing experience by choosing an app below:')
 
+st.selectbox("Please select your dashboard...", ('3D Printer Connect', 'Analytics', 'Mine', 'Order a model', 'Model Viewer', 'Slice'))
+
 @st.cache(suppress_st_warning=True)
 def get_fvalue(val):
     feature_dict = {"No":1,"Yes":2}
